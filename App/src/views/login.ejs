@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CINEMA</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-image: linear-gradient(45deg, cyan, yellow);
+    }
+
+    body ul {
+      display: flex;
+      justify-content: space-between;
+      padding: 0px 100px 100px 100px;
+    }
+
+    body ul li {
+      list-style: none;
+      font-size: 30px;
+      background-color: violet;
+      border-radius: 20px;
+    }
+
+    a:hover {
+      background-color: deepskyblue;
+      cursor: pointer;
+      border-radius: 20px;
+    }
+
+    div {
+      background-color: rgba(0, 0, 0, 0.8);
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 80px;
+      border-radius: 15px;
+      color: #fff;
+      text-align: center;
+    }
+
+    input {
+      padding: 15px;
+      border: none;
+      outline: none;
+      font-size: 15px;
+    }
+
+    button {
+      background-color: dodgerblue;
+      border: none;
+      padding: 15px;
+      width: 45%;
+      border-radius: 10px;
+      color: white;
+      font-size: 15px;
+    }
+
+    button:hover {
+      background-color: deepskyblue;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <ul>
+    <li><a href="#">Nomes</a></li>
+    <li><a href="criarConta">Cadastra</a></li>
+  </ul>
+  <div>
+    <h1>Login</h1>
+    <form action="/homepage/index" method="POST">
+      <input type="text" placeholder="Email" name="email">
+      <br><br>
+      <input type="password" placeholder="Senha" name="senha">
+      <br><br>
+      <button>Enviar</button>
+    </form>
+    <br><br>
+    <img src="http://www.joaoalberto.com/wp-content/uploads/2022/01/03/cinema-1.jpg" width="50%">
+  </div>
+</body>
+
+</html>

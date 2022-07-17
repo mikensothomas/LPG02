@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background-image: linear-gradient(45deg, cyan, yellow);
+    }
+
+    body div{
+      display: flex;
+      display: flex;
+      justify-content: space-between;
+      padding: 100px 100px 100px 100px;
+    }
+    
+    body li{
+      list-style: none;
+      font-size: 20px;
+      border-radius: 20px;
+    }
+
+    body div nav{
+      background-color: rgba(0, 0, 0, 0.8);;
+      padding: 30px;
+      border-radius: 15px;
+      color: #fff;
+      text-align: center;
+      margin-left: 20px;
+      max-width: 200px;
+    }
+
+    button{
+      background-color: dodgerblue;
+      border: none;
+      padding: 15px;
+      width: 50%;
+      border-radius: 10px;
+      color: white;
+      font-size: 15px;
+    }
+    button:hover{
+      background-color: deepskyblue;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <% filmes.forEach(filme => { %>
+      <nav>
+        <a href="/vendas?filme=<%- filme.filmeNome %>"><img src="<%= filme.filmeBanner %> " width="80%"></a>
+      </nav>
+    <% }) %>
+  </div>
+  
+  <script src="https://replit.com/public/js/replit- 
+  badge.js" theme="blue" defer></script>
+</body>
+
+</html>

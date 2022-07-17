@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<html>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: linear-gradient(45deg, cyan, yellow);
+        text-align: center;
+    }
+</style>
+
+<body>
+    <h1>Cadastrar Fimes</h1>
+
+    <form action="cadastraSessao" method="POST">
+        <label for="browser">Filme:</label>
+        <input list="Filmes" type="text" name="filme">
+        <datalist id="Filmes">
+            <% filmes.forEach(filme => { %>
+                <option value="<%= filme.filmeNome %> "></option>
+            <% }) %> 
+        </datalist>
+        <br><br>
+        <label for="browser">Dia:</label>
+            <input type="text" list="Dia" name="dia" id="browser">
+            <datalist id="Dia">
+                <option value="Segunda-feira"></option>
+                <option value="Terça-feira"></option>
+                <option value="Quarta-feira"></option>
+                <option value="Quinta-feira"></option>
+                <option value="Sexta-feira"></option>
+                <option value="Sábado"></option>
+                <option value="Domingo"></option>
+            </datalist>
+        <br><br>
+        <label for="browser">Horário:</label>
+            <input type="text" list="Hora" name="horario" id="browser">
+            <datalist id="Hora">
+                <option value="13:30"></option>
+                <option value="17:30"></option>
+                <option value="21:30"></option>
+            </datalist>
+        <br><br>
+        <label for="browser">Idioma:</label>
+            <input type="text" list="Idioma" name="idioma" id="browser">
+            <datalist id="Idioma">
+                <option value="Dublado"></option>
+                <option value="Legendado"></option>
+            </datalist>
+        <br><br>
+        <label for="browser">Preço:</label>
+            <input type="text" list="Preco" name="preco" id="browser">
+            <datalist id="Preco">
+                <option value="20,00"></option>
+                <option value="25,00"></option>
+            </datalist>
+        <br><br>
+        <input type="submit">
+    </form>
+</body>
+
+</html>
